@@ -2,10 +2,6 @@
 // Configuración de la API de OpenAI
 include 'config.php';
 
-// La clave API esta en OPENAI_API_KEY
-$openai_api_key = OPENAI_API_KEY;
-$apiUrl = 'https://api.openai.com/v1/chat/completions';
-
 // Obtener el mensaje del usuario a través de AJAX
 $getMesg = trim($_POST['text']);
 
@@ -38,19 +34,19 @@ if ($response === null) {
 
     // Iniciar cURL
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $apiUrl);
+    curl_setopt($ch, CURLOPT_URL, 'https://api.openai.com/v1/chat/completions');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         'Content-Type: application/json',
-        'Authorization: ' . 'Bearer ' . $apiKey
+        'Authorization: Bearer ' . $openai_api_key // Utiliza la variable correcta de configuración
     ]);
 
     // Ejecutar la solicitud
     $apiResponse = curl_exec($ch);
     if ($apiResponse === false) {
-        echo "Error: " . curl_error($ch);
+        $response = "Error al conectarse a la API de OpenAI.";
     } else {
         $responseData = json_decode($apiResponse, true);
         if (isset($responseData['choices'][0]['message']['content'])) {
