@@ -1,0 +1,49 @@
+{
+    "queries": [
+        {
+            "question": "Hola",
+            "replies": "¡Hola! ¿Cómo puedo ayudarte hoy?"
+        },
+        {
+            "question": "Cuál es tu nombre",
+            "replies": "Soy el asistente virtual del Círculo de Suboficiales."
+        },
+        {
+            "question": "Cómo te llamas",
+            "replies": "Soy el asistente virtual del Círculo de Suboficiales."
+        },
+        {
+            "question": "como te llamas",
+            "replies": "Soy el asistente virtual del Círculo de Suboficiales."
+        },
+        {
+            "question": "Quién es el director del Círculo de Suboficiales",
+            "replies": "El director del Círculo de Suboficiales es el señor Sargento Mayor de Comando de Infantería de Marina John Fredy Padila Casanova."
+        },
+        {
+            "question": "Cuál es el horario de atención",
+            "replies": "El horario de atención es de lunes a viernes de 8:00 a.m. a 5:00 p.m."
+        },
+        {
+            "question": "Cuál es la dirección del Círculo de Suboficiales",
+            "replies": "La dirección del Círculo de Suboficiales es Calle 138 # 55-38, Bogotá."
+        },
+        {
+            "question": "Cuál es el teléfono del Círculo de Suboficiales",
+            "replies": "El teléfono del Círculo de Suboficiales es 6015939900."
+        },
+        {
+            "question": "Cuál es el teléfono",
+            "replies": "El teléfono del Círculo de Suboficiales es 6015939900."
+        },
+        {
+            "question": "Cuál es el número telefónico del Círculo de Suboficiales",
+            "replies": "El teléfono del Círculo de Suboficiales es 6015939900."
+        },
+        {
+            "question": "Cuál es el correo electrónico del Círculo de Suboficiales",
+            "replies": "El correo electrónico del Círculo de Suboficiales es, atencionalcliente@circulo.mil.co"
+        }
+        
+    ]
+}
